@@ -216,6 +216,7 @@ body {
   border-radius: 10px;
   max-width: 240px;
   height: 250px;
+  background-color: white;
 }
 
 .advantages__item:hover {
@@ -422,6 +423,12 @@ body {
     height: 500px;
     margin: 0 auto;
   }
+
+  .advantages {
+    max-width: 502px;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (max-width: 960px) {
@@ -452,6 +459,10 @@ body {
     padding-left: 30px;
     background: url("../img/icons/phone-call-white.png") no-repeat 0 0;
     background-size: 17px;
+  }
+
+  .advantages {
+    width: auto;
   }
 
   .main__slider .slider__slide img {
