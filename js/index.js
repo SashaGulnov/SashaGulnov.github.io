@@ -4,7 +4,7 @@ btn.addEventListener('click', function (){
   alert('пока рано нажимать...')
 })
 
-$('.slider').slick({
+$('.main__slider').slick({
   infinite: true,
   adaptiveHeight: true,
   centerMode: false,
@@ -13,7 +13,7 @@ $('.slider').slick({
 
 //Стилизация точек слайдера, на простом css нее работает почему-то
 
-document.querySelectorAll('.slick-dots li').forEach((el) => {
+document.querySelectorAll('.main__slider .slick-dots li').forEach((el) => {
   el.style.display = 'flex'
   el.style.width = '100%'
 })

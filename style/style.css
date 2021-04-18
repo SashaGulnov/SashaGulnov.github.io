@@ -1,44 +1,118 @@
 /*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:18px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 /*--------------------*/
 
-body{
+body {
   font-family: PTSans, sans-serif;
   overflow-x: hidden;
 }
 
-.container{
+.container {
   z-index: 1;
   padding: 30px 5%;
 }
 
-.header{
+.header {
   min-height: 1000px;
   background: url('../img/guys.png') no-repeat 90% center, url('../img/1366x768.jpg') no-repeat 0 0;
 }
 
-.header__name{
+.header__name {
   color: rgb(254, 254, 254);
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
 }
 
-.header__info{
+.header__info {
   display: flex;
   justify-content: space-between;
   min-height: 55px;
@@ -46,7 +120,7 @@ body{
   align-items: flex-end;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
   align-items: flex-end;
   padding-left: 50px;
@@ -55,7 +129,7 @@ body{
   height: 100%;
 }
 
-.header__phone{
+.header__phone {
   display: flex;
   align-items: end;
   padding-left: 30px;
@@ -63,30 +137,30 @@ body{
   background-size: contain;
 }
 
-.header__number{
+.header__number {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-.header__description{
+.header__description {
   margin-top: 215px;
 }
 
-.header__title{
+.header__title {
   font-size: 42px;
   font-family: PTSerif;
   color: rgb(254, 254, 254);
   font-weight: bold;
 }
 
-.header__subtitle{
+.header__subtitle {
   margin-top: 40px;
   font-size: 28px;
   color: rgb(254, 254, 254);
   line-height: 1.2;
 }
 
-.header__button{
+.header__button {
   margin-top: 45px;
   display: inline-block;
   border-radius: 30px;
@@ -94,12 +168,12 @@ body{
   padding: 25px 35px;
 }
 
-.header__button:hover{
+.header__button:hover {
   cursor: pointer;
   box-shadow: 0 0 19px 0 #e19642;
 }
 
-.header__costCounting{
+.header__costCounting {
   color: rgb(254, 254, 254);
   font-weight: bold;
   text-transform: uppercase;
@@ -107,20 +181,20 @@ body{
   text-align: center;
 }
 
-.advantages__wrapper{
+.advantages__wrapper {
   z-index: 3;
   margin-top: -200px;
 }
 
-.advantages{
-  
+.advantages {
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-.advantages__row{
+.advantages__row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -128,42 +202,42 @@ body{
   width: 100vw;
 }
 
-.advantages__flex-item{
+.advantages__flex-item {
   margin: 5px;
-  }
+}
 
 
-.advantages__item{
+.advantages__item {
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border:  5px solid #e19642;
+  border: 5px solid #e19642;
   border-radius: 10px;
   max-width: 240px;
   height: 250px;
 }
 
-.advantages__item:hover{
+.advantages__item:hover {
   color: white;
   background-color: #e19642;
   cursor: pointer;
   box-shadow: 0 0 19px 0 #e19642;
 }
 
-.advantages__title{
+.advantages__title {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
 }
 
-.advantages__context{
+.advantages__context {
   line-height: 1.2;
   text-align: center;
 }
 
-.title{
+.title {
   font-size: 32px;
   font-family: "PTSerif";
   font-weight: bold;
@@ -171,7 +245,7 @@ body{
   text-align: center;
 }
 
-.main__subtitle{
+.main__subtitle {
   margin-top: 45px;
   font-family: "PTSans";
   line-height: 1.2;
@@ -179,7 +253,7 @@ body{
 
 }
 
-ul.slick-dots{
+.main__slider ul.slick-dots {
   top: -70px;
   display: flex;
   justify-content: space-around;
@@ -188,25 +262,25 @@ ul.slick-dots{
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  border-bottom: 5px solid #e19642 ;
+  border-bottom: 5px solid #e19642;
   height: 30px;
   text-align: center;
 }
 
-ul.slick-dots li{
+.main__slider ul.slick-dots li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-ul.slick-dots li.slick-active button{
+.main__slider ul.slick-dots li.slick-active button {
   background-color: #e19642;
   border-radius: 18px;
   width: 100%;
 }
 
-#slick-slide-control00::before{
+.main__slider #slick-slide-control00::before {
   content: 'гостинная';
   font-size: 18px;
   color: black;
@@ -215,7 +289,7 @@ ul.slick-dots li.slick-active button{
   width: 100%;
 }
 
-#slick-slide-control01::before{
+.main__slider #slick-slide-control01::before {
   content: 'коридор';
   font-size: 18px;
   color: black;
@@ -224,7 +298,7 @@ ul.slick-dots li.slick-active button{
   width: 100%;
 }
 
-#slick-slide-control02::before{
+.main__slider #slick-slide-control02::before {
   content: 'кухня';
   font-size: 18px;
   color: black;
@@ -233,7 +307,7 @@ ul.slick-dots li.slick-active button{
   width: 100%;
 }
 
-#slick-slide-control03::before{
+.main__slider #slick-slide-control03::before {
   content: 'комната';
   font-size: 18px;
   color: black;
@@ -242,7 +316,7 @@ ul.slick-dots li.slick-active button{
   width: 100%;
 }
 
-#slick-slide-control04::before{
+.main__slider #slick-slide-control04::before {
   content: 'ванная';
   font-size: 18px;
   color: black;
@@ -251,89 +325,89 @@ ul.slick-dots li.slick-active button{
   width: 100%;
 }
 
-.slider{
+.main__slider {
   width: 100%;
   margin: 100px auto 20px;
 }
 
-.slider__slide{
+.main__slider .slider__slide {
   position: relative;
 }
 
-.slider__slide img{
+.main__slider .slider__slide img {
   height: 700px;
   margin: 0 auto;
 }
 
-.slider__inner {
+.main__slider .slider__inner {
   width: fit-content;
   margin: 0 auto;
   position: relative;
 }
 
-.tooltip{
+.tooltip {
   cursor: pointer;
   padding: 6px;
   border-radius: 18px;
   background-color: white;
   height: 35px;
   display: flex;
-  
+
 }
 
-.tooltip__windows{
+.tooltip__windows {
   position: absolute;
-  top:13%;
-  left:14%; 
+  top: 13%;
+  left: 14%;
 }
 
-.tooltip__walls{
+.tooltip__walls {
   position: absolute;
-  top:13%;
-  left:80%; 
+  top: 13%;
+  left: 80%;
 }
 
-.tooltip__furniture{
+.tooltip__furniture {
   position: absolute;
-  top:55%;
-  left:53%; 
+  top: 55%;
+  left: 53%;
 }
 
-.tooltip__carpet{
+.tooltip__carpet {
   position: absolute;
-  bottom:8%;
-  left:45%; 
+  bottom: 8%;
+  left: 45%;
 }
 
-.tooltip__floor{
+.tooltip__floor {
   position: absolute;
-  bottom:5%;
-  left:5%; 
+  bottom: 5%;
+  left: 5%;
 }
 
-.tooltip__text{
+.tooltip__text {
   display: none;
 }
 
-.tooltip__wrapper{
+.tooltip__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
 
-.tooltip__mark{
+.tooltip__mark {
   border: 7px solid orange;
   padding: 5px;
-  display: flex; 
+  display: flex;
   border-radius: 50%;
 }
 
-.active-tooltip{
+.active-tooltip {
   border-radius: 18px;
 }
 
-.active-tooltip-text{
+.active-tooltip-text {
   z-index: 0;
   background-color: white;
   display: flex;
@@ -343,103 +417,106 @@ ul.slick-dots li.slick-active button{
   white-space: nowrap;
 }
 
-@media screen and (max-width: 1280px){
-  .slider__slide img{
+@media screen and (max-width: 1280px) {
+  .main__slider .slider__slide img {
     height: 500px;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 960px){
-  .slider__slide img{
+@media screen and (max-width: 960px) {
+  .main__slider .slider__slide img {
     height: 400px;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 760px){
-  .header {   
+@media screen and (max-width: 760px) {
+  .header {
     background: url('../img/1366x768.jpg') no-repeat 0 0;
   }
-  .slider__slide img{
+
+  .main__slider .slider__slide img {
     height: 300px;
     margin: 0 auto;
   }
-  .header__description{
+
+  .header__description {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .header__number {
     color: white;
     padding-left: 30px;
-  background: url("../img/icons/phone-call-white.png") no-repeat 0 0;
-  background-size: 17px;
+    background: url("../img/icons/phone-call-white.png") no-repeat 0 0;
+    background-size: 17px;
   }
-  .slider__slide img{
+
+  .main__slider .slider__slide img {
     height: 250px;
     margin: 0 auto;
   }
 
-  .tooltip__walls span{
+  .tooltip__walls span {
     position: absolute;
-    bottom:-30px;
-    left:-60px;
+    bottom: -30px;
+    left: -60px;
     border-radius: 18px;
     padding: 5px 10px
   }
 
-  .slider{
+  .main__slider {
     margin-top: 160px;
   }
 
-  ul.slick-dots{
+  .main__slider ul.slick-dots {
     flex-direction: column;
     height: 140px;
     top: -150px;
   }
 
-  ul.slick-dots li.slick-active button{
+  .main__slider ul.slick-dots li.slick-active button {
     width: 50%;
   }
 
-  ul.slick-dots li button{
-    
+  .main__slider ul.slick-dots li button {
+
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 420px) {
   body {
     font-size: 14px;
   }
 
-  .header__number{
+  .header__number {
     background-size: 14px;
   }
 
-  .advantages__item{
+  .advantages__item {
     height: 210px;
   }
 
-  .slider__slide img{
+  .main__slider .slider__slide img {
     height: 180px;
     margin: 0 auto;
   }
 
-  .tooltip{
+  .tooltip {
     padding: 3px;
     height: 30px;
   }
 
-  .tooltip__text{
+  .tooltip__text {
     margin-left: 5px;
   }
 
-  .tooltip__walls span{
-    bottom:-25px;
-    left:-53px;
+  .tooltip__walls span {
+    bottom: -25px;
+    left: -53px;
     /* box-shadow: 0px 0px 16px 1px black; */
   }
 
