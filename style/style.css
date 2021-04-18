@@ -281,7 +281,7 @@ body {
 }
 
 .main__slider #slick-slide-control00::before {
-  content: 'гостинная';
+  content: 'гостиная';
   font-size: 18px;
   color: black;
   text-transform: uppercase;
