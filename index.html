@@ -6,10 +6,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style/style.css">
-  <script src="./js/jquery/jquery.min.js"></script>
-  <script src="./js/slick/slick.min.js"></script>
-  <link rel="stylesheet" href="./js/slick/slick.css">
-  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.3-web/css/all.css">
   <title>Cleaning</title>
 </head>
 <body>
@@ -62,57 +60,150 @@
   <div class="container">
     <div class="main__title title">Как мы делаем уборку квартиры</div>
     <div class="main__subtitle">Клинер приезжает в назначенное время со всем необходимым и приступает к<br>уборке. Вам остантся только оценить результат</div>
-    <div class="main__slider slider">
-      <div class="slider__slide">
-        <div class="slider__inner">
-          <img src="./img/livingRoomSlider.jpg" alt="livingRoom">          
-          <div class="tooltip tooltip__walls">
-            <div class="tooltip__wrapper">
-              <div class="tooltip__mark"></div>
-              <span class="tooltip__text">Моем стены</span>
+    <div class="main__rooms rooms">
+      <div class="rooms__dot room active">гостиная</div>
+      <div class="rooms__dot room">коридор</div>
+      <div class="rooms__dot room">кухня</div>
+      <div class="rooms__dot room">комната</div>
+      <div class="rooms__dot room">ванная</div>
+    </div>
+    <div class="main__slider slider swiper-container">
+      <div class="slider__wrapper swiper-wrapper">
+        <div class="slider__slide swiper-slide">
+          <div class="slider__inner">
+            <img src="./img/livingRoomSlider.jpg" alt="livingRoom">
+            <div class="tooltip tooltip__walls">
+              <div class="tooltip__wrapper">
+                <div class="tooltip__mark"></div>
+                <span class="tooltip__text">Моем стены</span>
+              </div>
             </div>
-          </div>
-          <div class="tooltip tooltip__windows">
-            <div class="tooltip__wrapper">
-              <div class="tooltip__mark"></div>
-              <span class="tooltip__text">Моем окна</span>
+            <div class="tooltip tooltip__windows">
+              <div class="tooltip__wrapper">
+                <div class="tooltip__mark"></div>
+                <span class="tooltip__text">Моем окна</span>
+              </div>
             </div>
-          </div>
-          <div class="tooltip tooltip__furniture">
-            <div class="tooltip__wrapper">
-              <div class="tooltip__mark"></div>
-              <span class="tooltip__text">Моем мебель</span>
+            <div class="tooltip tooltip__furniture">
+              <div class="tooltip__wrapper">
+                <div class="tooltip__mark"></div>
+                <span class="tooltip__text">Моем мебель</span>
+              </div>
             </div>
-          </div>
-          <div class="tooltip tooltip__carpet">
-            <div class="tooltip__wrapper">
-              <div class="tooltip__mark"></div>
-              <span class="tooltip__text">Чистим ковер</span>
+            <div class="tooltip tooltip__carpet">
+              <div class="tooltip__wrapper">
+                <div class="tooltip__mark"></div>
+                <span class="tooltip__text">Чистим ковер</span>
+              </div>
             </div>
-          </div>
-          <div class="tooltip tooltip__floor">
-            <div class="tooltip__wrapper">
-              <div class="tooltip__mark"></div>
-              <span class="tooltip__text">Моем пол</span>
+            <div class="tooltip tooltip__floor">
+              <div class="tooltip__wrapper">
+                <div class="tooltip__mark"></div>
+                <span class="tooltip__text">Моем пол</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="slider__slide">
-        <img src="./img/hallSlider.jpg" alt="">
-      </div>
-      <div class="slider__slide">
-        <img src="./img/kitchenSlider.JPG" alt="">
-      </div>
-      <div class="slider__slide">
-        <img src="./img/roomSlider.jpg" alt="">
-      </div>
-      <div class="slider__slide">
-        <img src="./img/bathSlider.jpg" alt="">
+        <div class="slider__slide swiper-slide">
+          <div class="slider__inner"><img src="./img/hallSlider.jpg" alt=""></div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="slider__inner"><img src="./img/kitchenSlider.JPG" alt=""></div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="slider__inner"><img src="./img/roomSlider.jpg" alt=""></div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="slider__inner"><img src="./img/bathSlider.jpg" alt=""></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class="reviews">
+  <div class="container">
+    <div class="reviews__title title">Что говорят наши клиенты</div>
+    <div class="reviews__slider swiper-container">
+      <div class="reviews__wrapper swiper-wrapper">
+        <div class="reviews__slide swiper-slide">
+          <div class="reviews__inner">
+            <div class="reviews__header">
+              <div class="reviews__face"></div>
+              <div class="reviews__name">Марина Голубева-1</div>
+            </div>
+            <div class="reviews__stars">
+              <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="reviews__content">
+              Мойку окон заказываю регулярно весной и осенью. Лоджия, балкон, спальня, кухня, гостиная, клинерам работы хватает. Качеством очень довольна, а клиент я придирчивый и даже очень. Никаких разводов, грязи, все окна идеально прозрачные. Так же не обходят стороной и рамы с подоконниками.
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slide swiper-slide">
+          <div class="reviews__inner">
+            <div class="reviews__header">
+              <div class="reviews__face"></div>
+              <div class="reviews__name">Марина Голубева0</div>
+            </div>
+            <div class="reviews__stars">
+              <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="reviews__content">
+              Мойку окон заказываю регулярно весной и осенью. Лоджия, балкон, спальня, кухня, гостиная, клинерам работы хватает. Качеством очень довольна, а клиент я придирчивый и даже очень. Никаких разводов, грязи, все окна идеально прозрачные. Так же не обходят стороной и рамы с подоконниками.
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slide swiper-slide">
+          <div class="reviews__inner">
+            <div class="reviews__header">
+              <div class="reviews__face"></div>
+              <div class="reviews__name">Марина Голубева1</div>
+            </div>
+            <div class="reviews__stars">
+              <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="reviews__content">
+                Мойку окон заказываю регулярно весной и осенью. Лоджия, балкон, спальня, кухня, гостиная, клинерам работы хватает. Качеством очень довольна, а клиент я придирчивый и даже очень. Никаких разводов, грязи, все окна идеально прозрачные. Так же не обходят стороной и рамы с подоконниками.
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slide swiper-slide">
+          <div class="reviews__inner">
+            <div class="reviews__header">
+              <div class="reviews__face"></div>
+              <div class="reviews__name">Марина Голубева2</div>
+            </div>
+            <div class="reviews__stars">
+              <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="reviews__content">
+              Мойку окон заказываю регулярно весной и осенью. Лоджия, балкон, спальня, кухня, гостиная, клинерам работы хватает. Качеством очень довольна, а клиент я придирчивый и даже очень. Никаких разводов, грязи, все окна идеально прозрачные. Так же не обходят стороной и рамы с подоконниками.
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slide swiper-slide">
+          <div class="reviews__inner">
+            <div class="reviews__header">
+              <div class="reviews__face"></div>
+              <div class="reviews__name">Марина Голубева3</div>
+            </div>
+            <div class="reviews__stars">
+              <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="reviews__content">
+              Мойку окон заказываю регулярно весной и осенью. Лоджия, балкон, спальня, кухня, гостиная, клинерам работы хватает. Качеством очень довольна, а клиент я придирчивый и даже очень. Никаких разводов, грязи, все окна идеально прозрачные. Так же не обходят стороной и рамы с подоконниками.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next reviews__next"><span></span></div>
+      <div class="swiper-button-prev reviews__prev"><span></span></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>
