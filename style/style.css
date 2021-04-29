@@ -36,7 +36,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 18px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -90,8 +89,12 @@ h6 {
 
 /*--------------------*/
 
+html{
+  font-size: 18px;
+}
+
 body {
-  font-family: PTSans, sans-serif;
+  font-family: 'PTSans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -108,25 +111,24 @@ body {
 .header__name {
   color: rgb(254, 254, 254);
   font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
 }
 
 .header__info {
   display: flex;
   justify-content: space-between;
-  min-height: 55px;
-  height: 55px;
+  /* min-height: 55px;
+  height: 55px; */
   align-items: flex-end;
 }
 
-.header__logo {
+.logo {
   display: flex;
-  align-items: flex-end;
-  padding-left: 50px;
-  background: url("../img/icons/cleaningIcon.png") no-repeat 0 0;
-  background-size: contain;
+  align-items: baseline;
   height: 100%;
+}
+
+.logo img{
+  margin-right: 5px;
 }
 
 .header__phone {
@@ -143,11 +145,11 @@ body {
 }
 
 .header__description {
-  margin-top: 215px;
+  margin-top: 12rem;
 }
 
 .header__title {
-  font-size: 42px;
+  font-size: 2.3rem;
   font-family: PTSerif;
   color: rgb(254, 254, 254);
   font-weight: bold;
@@ -155,25 +157,29 @@ body {
 
 .header__subtitle {
   margin-top: 40px;
-  font-size: 28px;
+  font-size: 1.6rem;
   color: rgb(254, 254, 254);
   line-height: 1.2;
 }
 
-.header__button {
-  margin-top: 45px;
+.button{
   display: inline-block;
   border-radius: 30px;
   background-color: #e19642;
+  padding: 20px 35px;
+}
+
+.header__button {
+  margin-top: 2.5rem;
   padding: 25px 35px;
 }
 
-.header__button:hover {
+.button:hover {
   cursor: pointer;
   box-shadow: 0 0 19px 0 #e19642;
 }
 
-.header__costCounting {
+.button span {
   color: rgb(254, 254, 254);
   font-weight: bold;
   text-transform: uppercase;
@@ -183,7 +189,7 @@ body {
 
 .advantages__wrapper {
   z-index: 3;
-  margin-top: -200px;
+  margin-top: -11rem;
 }
 
 .advantages {
@@ -208,14 +214,14 @@ body {
 
 
 .advantages__item {
-  padding: 50px 15px;
+  padding: 2.8rem 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 5px solid #e19642;
   border-radius: 10px;
-  max-width: 240px;
-  height: 250px;
+  max-width: 13.3rem;
+  height: 13.9rem;
   background-color: white;
 }
 
@@ -239,7 +245,7 @@ body {
 }
 
 .title {
-  font-size: 32px;
+  font-size: 1.8rem;
   font-family: "PTSerif";
   font-weight: bold;
   line-height: 1.2;
@@ -467,10 +473,6 @@ body {
   height: 100%;
 }
 
-
-.reviews__wrapper{
-}
-
 .reviews__slide {
   display: flex;
   justify-content: center;
@@ -529,16 +531,153 @@ body {
 
 .reviews__stars{
   margin-bottom: 20px;
-  /* width: 75%; */
+  
+}
+
+.reviews__stars i:nth-child(2), .reviews__stars i:nth-child(4){
+  margin: 0 5px;
 }
 
 .reviews__content {
-  font-family: "Myriad Pro";
   line-height: 1.2;
   text-align: justify;
-  font-weight: 400;
-  /* width: 75%; */
 }
+
+.cleaning-prices__title{
+  margin-bottom: 40px;
+}
+
+.cleaning-prices__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.cleaning-prices__flex-item{
+  display: flex;
+  flex: 1 1 33.333%;
+  max-width: 27rem;
+  min-width: 15.5rem;
+  padding: 0 20px;
+}
+
+.cleaning-prices__item{
+  border-radius: 15px;
+  box-shadow: 0 0 40px 4px #c7c2c2;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "PTSans";
+  line-height: 1.2;
+}
+
+.cleaning-prices__img{
+  margin-bottom: 35px;
+}
+
+.cleaning-prices__service{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.cleaning-prices__description{
+  margin-bottom: 30px;
+}
+
+.cleaning-prices__time{
+  margin-bottom: 20px;
+}
+
+.cleaning-prices__price{
+margin-bottom: 50px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.cleaning-prices__button{
+  padding: 20px 35px;
+}
+
+.cleaning-prices__button span{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order-form__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.order-form__title{
+  margin-bottom: 40px;
+}
+
+.order-form__title span{
+  font-weight: normal;
+}
+
+.order-form__form{
+  text-align: center;
+  max-width: 430px;
+}
+
+.order-form__inputs{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.order-form__inputs input{
+  border: 2px solid #84b8ae;
+  border-radius: 10px;
+  display: block;
+  padding: 25px;
+}
+
+.order-form__name{
+  margin-bottom: 30px;
+}
+
+.order-form__button{
+  padding: 20px 60px;
+}
+
+.footer__wrapper{
+  font-family: "PTSerif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo{
+  font-weight: bold;
+  margin-bottom: 2.8rem;
+}
+
+.footer__policy{
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer__copyright{
+  font-size: 0.6rem;
+  line-height: 1.2;
+  text-align: center;  
+}
+
 
 @media screen and (max-width: 1280px) {
   .main__slider .slider__slide img {
@@ -558,11 +697,28 @@ body {
     height: 400px;
     margin: 0 auto;
   }
+  .cleaning-prices__wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .order-form__wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .order-form__image{
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 760px) {
   .header {
     background: url('../img/1366x768.jpg') no-repeat 0 0;
+  }
+
+  .advantages__wrapper {
+    margin-top: -19rem;
   }
 
   .main__slider .slider__slide img {
@@ -573,6 +729,11 @@ body {
   .header__description {
     text-align: center;
   }
+
+  .reviews__inner{
+    padding: 6.5% 14% 6.5% 9.8%
+  }
+
   .reviews__header{
     flex-direction: column;
     align-items:flex-start;
@@ -613,16 +774,25 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .order-form__image{
+    width: 100%;
+    max-width: 438px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  body {
+  html {
     font-size: 14px;
   }
 
   .header__number {
     background-size: 14px;
   }
+
+  .advantages__wrapper {
+    margin-top: -32rem;
+  }
+
 
   .advantages__item {
     height: 210px;
@@ -647,5 +817,7 @@ body {
     left: -53px;
     /* box-shadow: 0px 0px 16px 1px black; */
   }
+
+
 
 }

@@ -1,7 +1,7 @@
-btn = document.querySelector('.header__button');
+﻿btn = document.querySelector('.header__button');
 
 btn.addEventListener('click', function (){
-  alert('пока рано нажимать...')
+  alert('пока рано хуй сосать...')
 })
 
 const slider = new Swiper ('.slider', {
