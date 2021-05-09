@@ -24,7 +24,7 @@ input_tel.addEventListener("blur", mask, false);
         form.reset()
         form.classList.remove('_sending')
       } else {
-        Swal.fire('Ошибка')
+        Swal.fire(`${result.message}, к сожалению, заявка не может быть отправлена`)
         form.classList.remove('_sending')
       }
     }
