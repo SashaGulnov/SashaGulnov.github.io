@@ -1,5 +1,7 @@
 ﻿'use strict'
 
+
+
 let form = document.querySelector('.order-form__form')
 form.addEventListener('submit', formSend)
 let input_tel = form.querySelector('input[type=tel')
