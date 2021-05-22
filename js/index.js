@@ -1,7 +1,5 @@
 ﻿'use strict'
 
-
-
 let form = document.querySelector('.order-form__form')
 form.addEventListener('submit', formSend)
 let input_tel = form.querySelector('input[type=tel')
@@ -22,11 +20,11 @@ input_tel.addEventListener("blur", mask, false);
         })
       if (response.ok) {
         let result = await response.json()
-        Swal.fire(`Спасибо за заявку, ${result.message}`)
+        Swal.fire(`Спасибо за заявку, ${result.name}`)
         form.reset()
         form.classList.remove('_sending')
       } else {
-        Swal.fire(`${result.message}, к сожалению, заявка не может быть отправлена`)
+        Swal.fire(`${result.name}, к сожалению, заявка не может быть отправлена`)
         form.classList.remove('_sending')
       }
     }
@@ -38,11 +36,18 @@ input_tel.addEventListener("blur", mask, false);
   
     for (let input of formReq) {
       formRemoveError(input)
+      if (input.name==='number' && input.value.length!==17) {
+        formAddError(input)
+        error++
+        }
+      if (input.name==='name' && /[a-zA-Z0-9]/.test(input.value)) {
+          formAddError(input)
+          error++
+          }
       if (!input.value) {
         formAddError(input)
         error++
       }
-      
     }
     return error
 }
@@ -60,13 +65,19 @@ function setCursorPosition(pos, elem) {
           range.select()
       }
   }
-   
+
   function mask(event) {
       var matrix = "+7 (___) ___ ____",
           i = 0,
           def = matrix.replace(/\D/g, ""),
           val = this.value.replace(/\D/g, "");
+          console.log('')
+          console.log(def)
+          console.log(val)
       if (def.length >= val.length) val = def;
+      console.log('')
+      console.log(def)
+      console.log(val)
       this.value = matrix.replace(/./g, function(a) {
           return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
       });
@@ -82,7 +93,6 @@ function setCursorPosition(pos, elem) {
   function formRemoveError(input) {
     input.classList.remove('_error')
   }
-
 
   document.querySelectorAll('.button:not(.order-form__button)').forEach(
     function (button) {
@@ -130,7 +140,6 @@ function setCursorPosition(pos, elem) {
     room = document.querySelector(`.rooms`).children.item(slider.realIndex);
     room.classList.toggle('active')
   })
-
 
   let rooms = document.querySelectorAll('.rooms .room')
   rooms.forEach((room) => {

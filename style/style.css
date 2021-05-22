@@ -95,17 +95,34 @@ html{
 }
 
 body {
+  /* font-size: 18px; */
   overflow-x: hidden;
 }
 
 .container {
   z-index: 1;
-  padding: 30px 5%;
+  padding: 30px 13%;
 }
 
 .header {
+  position: relative;
   min-height: 1000px;
-  background: url('../img/guys.png') no-repeat 90% center, url('../img/1366x768.jpg') no-repeat 0 0;
+  background: url('../img/guys.png') no-repeat 85% center;
+}
+
+.header__background{
+  /* display: none; */
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  z-index: -2;
+  /* width: 100%;
+  height: 150%; */
+
+}
+
+.header__background img{
+  min-width: 1040px;
 }
 
 .header__name {
@@ -192,12 +209,10 @@ body {
 }
 
 .advantages {
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .advantages__row {
   display: flex;
@@ -210,7 +225,6 @@ body {
 .advantages__flex-item {
   margin: 5px;
 }
-
 
 .advantages__item {
   padding: 2.8rem 0.8rem;
@@ -250,14 +264,17 @@ body {
   text-align: center;
 }
 
+
 .main__subtitle {
   margin-top: 45px;
   line-height: 1.2;
   text-align: center;
-
+  margin-bottom: 45px;
 }
 
 .rooms{
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   padding: 5px;
   justify-content: space-around;
@@ -556,6 +573,7 @@ body {
   max-width: 27rem;
   min-width: 15.5rem;
   padding: 0 20px;
+  margin: 20px 0;
 }
 
 .cleaning-prices__item{
@@ -621,14 +639,12 @@ text-transform: uppercase;
 }
 
 .order-form__form{
-  padding: 20px;
   text-align: center;
   max-width: 430px;
   position: relative;
 }
 
 .order-form__form::after{
-
   content: '';
   position: absolute;
   top: 0;
@@ -656,10 +672,12 @@ text-transform: uppercase;
 }
 
 .order-form__inputs input{
+  font-size: 1rem;
   border: 2px solid #84b8ae;
   border-radius: 10px;
   display: block;
   padding: 25px;
+  width: 100%;
 }
 
 .order-form__inputs input._error{
@@ -718,6 +736,27 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 960px) {
+  .header {
+    background: none;
+  }
+  
+  .header__description {
+    text-align: center;
+  }
+
+  .header__phone{
+    background: url("../img/icons/phone-call-white.png") no-repeat 0 0;
+    background-size: 17px;
+  }
+
+  .header__number {
+    color: white;
+  }
+
+  .advantages__wrapper {
+    margin-top: -19rem;
+  }
+
   .main__slider .slider__slide img {
     height: 400px;
     margin: 0 auto;
@@ -730,7 +769,7 @@ text-transform: uppercase;
   }
 
   .cleaning-prices__flex-item{
-    padding: 20px 0;
+    padding: 0;
   }
 
   .order-form__wrapper{
@@ -744,21 +783,10 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 760px) {
-  .header {
-    background: url('../img/1366x768.jpg') no-repeat 0 0;
-  }
-
-  .advantages__wrapper {
-    margin-top: -19rem;
-  }
 
   .main__slider .slider__slide img {
     height: 300px;
     margin: 0 auto;
-  }
-
-  .header__description {
-    text-align: center;
   }
 
   .reviews__inner{
@@ -776,15 +804,13 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 640px) {
-  .header__number {
-    color: white;
-    padding-left: 30px;
-    background: url("../img/icons/phone-call-white.png") no-repeat 0 0;
-    background-size: 17px;
-  }
+
+  /* .container{
+    padding: 30px 10%; 
+  } */
 
   .advantages {
-    width: auto;
+    /* width: auto; */
   }
 
   .main__slider .slider__slide img {
@@ -816,8 +842,13 @@ text-transform: uppercase;
     font-size: 14px;
   }
 
-  .header__number {
+  .header__name{
+    font-size: 0;
+  }
+
+  .header__phone {
     background-size: 14px;
+    padding-left: 25px;
   }
 
   .advantages__wrapper {
@@ -845,7 +876,7 @@ text-transform: uppercase;
 
   .tooltip__walls span {
     bottom: -25px;
-    left: -53px;
+    left: -35px;
     /* box-shadow: 0px 0px 16px 1px black; */
   }
 
